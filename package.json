@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "build": "./node_modules/.bin/babel ./source/apiMiddleware.js --out-file ./apiMiddleware.js && ./node_modules/.bin/babel ./source/createApiAction.js --out-file ./createApiAction.js"
+    "build": "webpack -p"
   },
   "repository": {
     "type": "git",
@@ -25,9 +25,11 @@
   },
   "homepage": "https://github.com/antoinejaussoin/redux-middleware-api#readme",
   "devDependencies": {
-    "babel": "^5.8.29",
+    "babel-core": "^5.8.30",
+    "babel-loader": "^5.3.2",
     "eslint": "^1.7.3",
     "jest": "^0.1.40",
-    "jest-babel": "^1.0.1"
+    "jest-babel": "^1.0.1",
+    "webpack": "^1.12.2"
   }
 }
