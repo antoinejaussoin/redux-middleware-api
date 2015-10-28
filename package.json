@@ -1,0 +1,33 @@
+{
+  "name": "redux-middleware-api",
+  "version": "0.0.1",
+  "description": "Making API calls easier with a middleware and some action creators",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "./node_modules/.bin/babel ./source/apiMiddleware.js --out-file ./apiMiddleware.js && ./node_modules/.bin/babel ./source/createApiAction.js --out-file ./createApiAction.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antoinejaussoin/redux-middleware-api.git"
+  },
+  "keywords": [
+    "redux",
+    "middleware",
+    "api",
+    "rest",
+    "FSA"
+  ],
+  "author": "Antoine Jaussoin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/antoinejaussoin/redux-middleware-api/issues"
+  },
+  "homepage": "https://github.com/antoinejaussoin/redux-middleware-api#readme",
+  "devDependencies": {
+    "babel": "^5.8.29",
+    "eslint": "^1.7.3",
+    "jest": "^0.1.40",
+    "jest-babel": "^1.0.1"
+  }
+}
